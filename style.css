@@ -1,0 +1,47 @@
+.fisheye-menu {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fisheye-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 600px;
+  height: 100px;
+  padding: 0;
+}
+
+.fisheye-menu li {
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  transform: scale(0.5);
+  transition: transform 0.5s ease-out;
+}
+
+.fisheye-menu li:hover {
+  transform: scale(1);
+}
+
+.fisheye-menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #312f2f;
+  font-size: 20px;
+  line-height: 100px;
+}
+
+.fisheye-menu i {
+  font-size: 30px;
+}
